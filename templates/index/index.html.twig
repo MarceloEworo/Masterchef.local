@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block stylesheets %} 
+  {{parent()}}
+  {% endblock %} 
+{% block body %}
+    <header>
+      <div class="logo">
+        <!-- imagen cip estella -->
+        <a href="index.html"><img src="{{ asset('img/Logopoli.png') }}" alt="Logo politécnico" /></a>
+      </div>
+      <div class="center" id="titulo" style="background-image:url('{{asset('img/cabeceracortada.jpg')}}">
+        <!-- aqui la imagen de fondo irá con css -->
+        <h1>{{ controller_name }}</h1>
+      </div>
+    </header>
+    <div class="flex_container">
+        <aside class="side">
+          <nav id="menu">
+            <ul id="menu_item" >
+              <li><a class="boton" href="Eventos.html">Eventos</a></li>
+              <li><a class="boton" href="Participantes.html">Participantes</a></li>
+              <li><a class="boton" href="Estadisticas.html">Estadisticas</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="main flex_container">
+          <fieldset name="proximo_concurso"> 
+            <legend class="titulofieldset">Próximo concurso</legend>
+            <img src="{{ asset('img/costillas_resized.png')}}" alt="img_costillas"/>
+            <h3>Guiso de costillas</h3>
+            <p>Descripción del evento <strong>guiso de costillas</strong>.</p>
+          </fieldset>
+          <fieldset name="ultimo_concurso"> 
+            <legend class="titulofieldset">Último concurso</legend>
+            <img src="{{asset('img/tortilla_patatas_resized.png')}}" alt="img_tortilla"/>
+            <h3>Tortilla de patatas</h3>
+            <p>Descripción del evento <strong>tortilla de patatas</strong>.</p>
+          </fieldset>
+        </section>
+    </div>
+{% endblock %}

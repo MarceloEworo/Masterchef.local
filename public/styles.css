@@ -1,0 +1,204 @@
+* li {list-style:none;}
+
+header {
+    height: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {height: 25%;
+    margin: 1%;
+}
+body { background-color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+#titulo { 
+    background-image: url("{{asset('img/cabeceracortada.jpg')");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+.center {  line-height: 150px;
+    height: 150px;
+    text-align: center;
+}
+.flex_container {display:flex; 
+    flex-direction: row;
+}
+.flex_container_col {display:flex; 
+    flex-direction: column;
+}
+.flex_container_bet{
+    -ms-flex-item-align: stretch ;
+}
+.side {flex: 20%;
+}
+.main {flex: 80%;
+}
+#menu { padding: 10px 0px;
+    text-align: center;
+    
+}
+
+#menu_item li {height: 80px;
+    
+}
+#menu_item li :hover {
+    background-color: #66b2ff;
+    color: white;
+}
+.boton {
+    display: inline-block; 
+    width: 100px;
+    background-color: #879199;
+    padding: 25px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.titulofieldset {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color:  #879199;
+}
+
+fieldset {
+    margin: 1%;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.botonpeque {
+    display: inline-block; 
+    background-color:darkblue;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+.fondobotontitulo{
+    display: inline-block; 
+    background-color:#879199;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.fondoboton{
+    display: inline-block; 
+    background-color: #66b2ff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.hover :hover{
+    background-color: #66b2ff;
+    color: white;
+}
+
+.inline{
+    display: inline;
+    float: left;
+}
+
+.hoverinline :hover{
+    background-color: #66b2ff;
+    color: white;
+    float: left;
+    display: inline;
+}
+
+.hoverinline{
+    display: inline;
+    float: left;
+}
+
+.linea{
+    display: table;
+}
+
+.inline p{
+    padding: 10px;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.texto{
+    border-radius: 6px;
+    margin: 5px;
+    padding: 10px;
+}
+.formulario_evento {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.formulario_evento label {
+    background-color: white;
+    width: 85%;
+    padding: 10px;
+    text-transform: uppercase;	
+}
+.formulario_evento input {
+    background-color: lightgray;
+    border: 0;
+    border-radius: 5px;
+}
+.formulario_evento input:hover {
+    background-color: #66b2ff;
+    border: 0;
+    border-radius: 5px;
+}
+.formulario_evento input[type=text] {
+    width: 85%;
+    padding: 10px;
+}
+.formulario_evento input[type=date] {
+    width: 25%;
+    padding-top: 20px;  
+}
+.formulario_evento input[type=time] {
+    width: 25%;
+    padding-top: 20px;
+}
+.formulario_evento textarea{
+    width: 85%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+.formulario_evento textarea:hover{
+    width: 85%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #66b2ff;
+    margin-bottom: 20px;
+}
